@@ -753,71 +753,42 @@ nav .active-section span {
 
 #contact-content {
   padding: 80px 60px;
-  /* position: relative;
-  width: 50%;
-  display: inline-block;
-  left: 10%; */
+  padding-bottom: 40vh;
 }
 
-#contact input {
-  border-radius: 0px;
-  padding-left: 15px;
-  font-size: 13px;
-  color: #aaa;
-  background-color: #f4f4f4;
-  border: 1px solid #eee;
-  outline: none;
-  box-shadow: none;
-  line-height: 40px;
-  height: 40px;
-  width: 100%;
-  margin-bottom: 25px;
-}
-
-#contact textarea {
-  border-radius: 0px;
-  padding-left: 15px;
-  padding-top: 10px;
-  font-size: 13px;
-  color: #aaa;
-  background-color: #f4f4f4;
-  border: 1px solid #eee;
-  outline: none;
-  box-shadow: none;
-  height: 200px;
-  max-height: 250px;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 25px;
+#contact-content p {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 5vh;
 }
 
 #contact a {
-  font-size: 13px;
-  border-radius: 0px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
   background-color: #3b72a8;
   display: inline-block;
   height: 44px;
-  line-height: 24px;
   outline: none;
   box-shadow: none;
-  width: 100%;
+  width: 30%;
   letter-spacing: 0.25px;
-  text-decoration: none;
   transition: all 0.3s;
 }
 
 #contact a:hover {
-  color: #232323;
-  background-color: #f4f4f4;
+  color: #3b72a8;
+  background-color: #fff;
+  text-decoration: none;
+  border: 1px solid lightgrey;
 }
 
 /* Footer Style */
 
 .footer {
-  background-color: rgba(12, 12, 12, 0.9);
   height: 80px;
   line-height: 80px;
   display: inline-block;
@@ -828,16 +799,9 @@ nav .active-section span {
 .footer p {
   margin-bottom: 0px;
   font-size: 13px;
-  line-height: 80px;
-  color: #fff;
+  color: #aaa;
   letter-spacing: 0.5px;
   font-weight: 300;
-}
-
-.footer p a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
 }
 
 /* Responsive Style */
@@ -893,6 +857,11 @@ nav .active-section span {
     font-size: 15px;
     flex-direction: column;
   }
+
+  #contact a {
+    width: 60%;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1060,5 +1029,17 @@ nav .active-section span {
 
   #projects .item .image img {
     height: 40vw;
+  }
+
+  #contact-content {
+    padding-bottom: 27vh;
+  }
+
+  #contact a {
+    width: 50%;
+  }
+
+  .footer p {
+    font-size: 11px;
   }
 }
