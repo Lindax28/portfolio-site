@@ -274,6 +274,7 @@ nav .active-section {
 nav .active-section span {
   background-color: #3b72a8;
 }
+
 .sidebar-navigation nav a:hover .circle {
   background-color: #fff;
 }
@@ -564,17 +565,7 @@ nav .active-section span {
   text-align: center;
   margin-left: 15px;
   background-color: white;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-#projects .item:hover {
-  cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(59, 114, 168, 0.4), 0 6px 20px 5px rgba(59, 114, 168, 0.3);
-}
-
-#projects .item:hover .view-live{
-  font-weight: bold;
-  color: #3b72a8;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 #projects .item .image {
@@ -675,6 +666,7 @@ nav .active-section span {
 .tabgroup {
   background-color: #f4f4f4;
   padding: 20px 30px;
+  padding-bottom: 7px;
 }
 
 .clearfix:after {
@@ -753,7 +745,11 @@ nav .active-section span {
 
 #contact-content {
   padding: 80px 60px;
-  padding-bottom: 50vh;
+  padding-bottom: 40vh;
+}
+
+#contact-content .contact-button {
+  margin-top: 20vh;
 }
 
 #contact-content p {
