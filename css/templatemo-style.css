@@ -491,6 +491,7 @@ nav .active-section span {
 
 #about {
   padding: 13vh;
+  padding-bottom: 20vh;
 }
 
 #about .about-info {
@@ -501,16 +502,16 @@ nav .active-section span {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 #about .section-content .row p {
   width: 60%;
-  text-align: left;
+  text-align: justify;
 }
 
 #about .section-content .row h4 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #about .section-content .row .item img {
@@ -543,19 +544,15 @@ nav .active-section span {
 /* Recent Projects Style */
 
 #projects {
+  background-color: #f6f6f6;
   padding: 11vh;
-  padding-bottom: 22vh;
+  padding-bottom: 28vh;
   border-bottom: 1px solid #eee;
 }
 
 #projects .section-heading {
   margin-right: 20%;
 }
-
-/* #projects .content-section {
-  display: inline-block;
-  position: relative;
-} */
 
 #projects .section-content {
   display: flex;
@@ -566,6 +563,7 @@ nav .active-section span {
 #projects .item {
   text-align: center;
   margin-left: 15px;
+  background-color: white;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -740,8 +738,9 @@ nav .active-section span {
 }
 
 #resume .item .text-content li {
+  line-height: 1.5;
   border: none;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-top: 0;
 }
 
@@ -749,11 +748,12 @@ nav .active-section span {
 
 #contact {
   padding-top: 0px;
+  background-color: #f6f6f6;
 }
 
 #contact-content {
   padding: 80px 60px;
-  padding-bottom: 40vh;
+  padding-bottom: 50vh;
 }
 
 #contact-content p {
@@ -794,12 +794,13 @@ nav .active-section span {
   display: inline-block;
   text-align: center;
   width: 100%;
+  background-color: #f6f6f6;
 }
 
 .footer p {
   margin-bottom: 0px;
   font-size: 13px;
-  color: #aaa;
+  color: #949494;
   letter-spacing: 0.5px;
   font-weight: 300;
 }
