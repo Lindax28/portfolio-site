@@ -490,7 +490,7 @@ nav .active-section span {
 /* About Me Style */
 
 #about {
-  padding: 5vw;
+  padding: 13vh;
 }
 
 #about .about-info {
@@ -543,7 +543,8 @@ nav .active-section span {
 /* Recent Projects Style */
 
 #projects {
-  padding: 5vw;
+  padding: 11vh;
+  padding-bottom: 22vh;
   border-bottom: 1px solid #eee;
 }
 
@@ -557,8 +558,9 @@ nav .active-section span {
 } */
 
 #projects .section-content {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #projects .item {
@@ -582,12 +584,12 @@ nav .active-section span {
 }
 
 #projects .item .image img {
-  height: 12vw;
+  height: 13vw;
   overflow: hidden;
 }
 
 #projects .item .text-content {
-  padding: 5px;
+  padding: 15px;
   padding-top: 30px;
   background-color: #fff;
   position: relative;
@@ -614,160 +616,60 @@ nav .active-section span {
 
 #projects .item .text-content .project-links {
   margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+/* resume Style */
 
-/* Video Presentation Style */
-
-#video {
-  text-align: center;
-  background-color: #f4f4f4;
-  padding: 100px 60px;
-}
-
-#video .section-heading {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-#video .section-heading h1 {
-  display: block;
-  margin: 0px;
-}
-
-#video .section-heading p {
-  position: relative;
-  margin: 0px;
-}
-
-#video .accent-button {
-  margin-top: 30px;
-}
-
-.box-video {
-  width: 100%;
-  position: relative;
-  margin-top: 30px;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.box-video .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-}
-
-.box-video .video-container {
-  position: relative;
-  margin: 0;
-  z-index: 1;
-}
-
-.box-video .bt-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -30px 0 0 -30px;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  background: #fff;
-  border-radius: 50%;
-  text-indent: -999em;
-  cursor: pointer;
-  z-index: 2;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.box-video .bt-play:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 0;
-  width: 0;
-  margin: -12px 0 0 -6px;
-  border: solid transparent;
-  border-left-color: #000;
-  border-width: 12px 20px;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.box-video:hover .bt-play {
-  transform: scale(1.1);
-}
-
-.box-video.open .bg-video {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.6s 0.8s;
-  transition: all 0.6s 0.8s;
-}
-.box-video.open .video-container {
-  opacity: 1;
-  -webkit-transition: all 0.6s 0.8s;
-  transition: all 0.6s 0.8s;
-}
-
-/* Blog Style */
-
-#blog {
+#resume {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 17vh;
 }
 
-#blog .tabs {
+#resume .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  height: 90px;
+  height: 70px;
   width: 100%;
   background-color: #eee;
-  border-bottom: 10px solid #3b72a8;
+  border-bottom: 8px solid #3b72a8;
 }
 
-#blog .tabs li {
-  display: inline-block;
+#resume .tabs li {
   text-align: center;
-  width: 25%;
+  width: 50%;
   float: left;
   margin: 0;
   padding: 0;
 }
 
-#blog .tabs a {
+#resume .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   color: #232323;
-  font-size: 19px;
-  line-height: 80px;
+  font-size: 18px;
+  line-height: 65px;
   font-weight: 600;
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#resume .tabs a:hover {
   color: #3b72a8;
 }
 
-#blog .tabs .active:hover {
+#resume .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#resume .tabs .active {
   background-color: #3b72a8;
   color: #fff;
 }
@@ -783,57 +685,64 @@ nav .active-section span {
   clear: both;
 }
 
-#blog .tabgroup ul {
+#resume .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#resume .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
-  padding-bottom: 20px;
+  margin-top: 10px;
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#resume .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
-  padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
-  float: left;
+#resume .tabgroup ul li img {
+  width: 13vw;
+  height: 14vw;
   margin-right: 30px;
-  max-width: 100%;
-  overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+
+#resume .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
-  padding-top: 7.5px;
+#resume .item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+#resume .item .text-content h4 {
   margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 21px;
+  margin-bottom: 10px;
+  font-size: 16px;
   font-weight: 600;
   color: #232323;
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
-  display: inline-block;
-  font-size: 15px;
+#resume .item .text-content .employer-date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
   font-weight: 600;
   color: #7a7a7a;
   letter-spacing: 0.5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-#blog .item .text-content .accent-button {
-  margin-top: 25px;
+#resume .item .text-content li {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Contact Style */
@@ -844,6 +753,10 @@ nav .active-section span {
 
 #contact-content {
   padding: 80px 60px;
+  /* position: relative;
+  width: 50%;
+  display: inline-block;
+  left: 10%; */
 }
 
 #contact input {
@@ -878,7 +791,7 @@ nav .active-section span {
   margin-bottom: 25px;
 }
 
-#contact button {
+#contact a {
   font-size: 13px;
   border-radius: 0px;
   font-weight: 600;
@@ -896,7 +809,7 @@ nav .active-section span {
   transition: all 0.3s;
 }
 
-#contact button:hover {
+#contact a:hover {
   color: #232323;
   background-color: #f4f4f4;
 }
@@ -956,6 +869,29 @@ nav .active-section span {
 
   #about .about-info {
     margin-bottom: 50px;
+  }
+
+  #about {
+    padding: 8vh;
+    padding-bottom: 13vh;
+  }
+
+  #resume .item {
+    flex-direction: column;
+  }
+
+  #resume .item .text-content h4 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  #resume .tabgroup ul li {
+    padding-bottom: 0px;
+  }
+
+  #resume .item .text-content .employer-date {
+    font-size: 15px;
+    flex-direction: column;
   }
 }
 
@@ -1023,7 +959,7 @@ nav .active-section span {
   }
 
   #about {
-    padding-top: 70px;
+    padding: 70px 30px 30px 30px;
   }
   
   #about .about-info {
@@ -1044,6 +980,7 @@ nav .active-section span {
     margin-top: 30px;
     width: 85%;
     font-size: 3vw;
+    text-align: justify;
   }
 
   #about .section-content .row h4 {
@@ -1070,31 +1007,58 @@ nav .active-section span {
     padding-right: 15px;
   }
 
-  #video {
+  #resume {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #blog {
-    padding-left: 15px;
-    padding-right: 15px;
+  #resume .item {
+    flex-direction: column;
   }
 
-  #blog .tabs a {
+  #resume .item .text-content .employer-date {
+    flex-direction: column;
+  }
+
+  #resume .tabs a {
     font-size: 13px;
   }
 
-  #blog .tabgroup ul li img {
+  #resume .tabgroup ul li img {
     float: none;
-    width: 100%;
+    width: 50%;
+    height: auto;
     margin-bottom: 15px;
   }
-  #blog .tabgroup ul li .text-content {
+  #resume .tabgroup ul li .text-content {
     display: block;
+  }
+
+  #resume .tabgroup ul li {
+    padding-bottom: 10px;
   }
 
   #contact-content {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  #projects {
+    padding-top: 70px;
+  }
+
+  #projects .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects .item {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  #projects .item .image img {
+    height: 40vw;
   }
 }
