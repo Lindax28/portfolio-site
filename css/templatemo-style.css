@@ -23,7 +23,7 @@ body {
 }
 
 .content-section {
-  padding-top: 80px;
+  padding-top: 60px;
   position: relative;
   width: 100%;
   display: inline-block;
@@ -40,7 +40,7 @@ body {
 .section-heading {
   text-align: left;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .section-heading h1 {
@@ -492,7 +492,7 @@ nav .active-section span {
 
 #about {
   padding: 13vh;
-  padding-bottom: 20vh;
+  padding-bottom: 22vh;
 }
 
 #about .about-info {
@@ -547,7 +547,6 @@ nav .active-section span {
 #projects {
   background-color: #f6f6f6;
   padding: 11vh;
-  padding-bottom: 28vh;
   border-bottom: 1px solid #eee;
 }
 
@@ -556,14 +555,14 @@ nav .active-section span {
 }
 
 #projects .section-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #projects .item {
   text-align: center;
   margin-left: 15px;
+  margin-bottom: 15px;
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -573,12 +572,12 @@ nav .active-section span {
 }
 
 #projects .item .image img {
-  height: 13vw;
+  height: 16vw;
   overflow: hidden;
 }
 
 #projects .item .text-content {
-  padding: 15px;
+  padding: 25px;
   padding-top: 30px;
   background-color: #fff;
   position: relative;
@@ -604,8 +603,8 @@ nav .active-section span {
 }
 
 #projects .item .text-content .project-links {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -616,7 +615,7 @@ nav .active-section span {
 #resume {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 17vh;
+  padding-bottom: 21vh;
 }
 
 #resume .tabs {
@@ -967,12 +966,12 @@ nav .active-section span {
     width: 7.5vw;
   }
 
-  #projects .owl-nav {
+  /* #projects .owl-nav {
     position: absolute;
     display: inline-block;
     top: -220px;
     right: 0;
-  }
+  } */
 
   #projects {
     padding-left: 15px;
